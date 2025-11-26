@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import Skills from './pages/Skills';
 import Portfolio from './pages/Portfolio';
 import Footer from './components/ui/footer';
-import { BrowserRouter as  Router, Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
   
