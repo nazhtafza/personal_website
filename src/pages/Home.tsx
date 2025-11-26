@@ -3,7 +3,7 @@ import type {MouseEvent as ReactMouseEvent} from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
-import { FaGithub, FaInstagram, FaBehance, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaBehance, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Home = () => {
   const socialLinks = [
@@ -26,6 +26,11 @@ const Home = () => {
       icon: <FaLinkedin size={24} />,
       href: "https://www.linkedin.com/in/nazhat-afza-zain-040050324",
       label: "Linkedin",
+    },
+    {
+      icon: <FaEnvelope size={24} />,
+      href: "mailto:nazhatzain1@gmail.com",
+      label: "Email",
     },
   ];
 
@@ -137,7 +142,7 @@ const Home = () => {
               perspective: "1000px", 
             }}>
             <div
-              className={`absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-500 rounded-2xl blur-2xl opacity-40 transition-all duration-500 group-hover:opacity-80 group-hover:blur-3xl`}
+              className={`absolute inset-0 bg-linear-to-r from-blue-600 via-purple-600 to-cyan-500 rounded-2xl blur-2xl opacity-40 transition-all duration-500 group-hover:opacity-80 group-hover:blur-3xl`}
               style={{
                 transform: isHovering
                   ? `rotateX(${rotate.x}deg) rotateY(${rotate.y}deg) scale(1.02)`
@@ -147,7 +152,7 @@ const Home = () => {
 
             {/* kontainer kanan*/}
             <div
-              className="relative rounded-2xl border-4 border-white/10 overflow-hidden shadow-2xl bg-black aspect-[4/5] md:aspect-square"
+              className="relative rounded-2xl border-4 border-white/10 overflow-hidden shadow-2xl bg-black aspect-4/5 md:aspect-square"
               style={{
                 transform: `rotateX(${rotate.x}deg) rotateY(${rotate.y}deg)`,
                 transition: isHovering ? "none" : "all 0.5s ease-out",
@@ -157,7 +162,7 @@ const Home = () => {
                 alt="Nazhat Afza Zain"
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-tr from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+              <div className="absolute inset-0 bg-linear-to-tr from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
             </div>
           </div>
         </div>

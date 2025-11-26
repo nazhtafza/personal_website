@@ -36,8 +36,8 @@ const projects: Project[] = [
     category: "UI/UX Design",
     title: "Website Desa Ngemplak",
     year: "Desember 2024 - Januari 2025",
-    description: "Platform manajemen toko online dengan fitur analitik real-time, manajemen inventaris, dan mode gelap. Dibangun dengan fokus pada performa.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop",
+    description: "Website Desa Ngemplak merupakan sistem informasi terpadu yang memuat segala informasi mengenai desa Ngemplak mulai dari visi desa hingga laman pengaduan",
+    image: "./public/Ngemplak_web.png",
     tags: ["Figma", "Figjam", "Maze", "Notion"],
     demoUrl: "https://desangemplak.com/",
     repoUrl: "#",
@@ -47,8 +47,8 @@ const projects: Project[] = [
     category: "UI/UX Design",
     title: "Saewooden Website",
     year: "Januari 2025 - Maret 2025",
-    description: "Platform manajemen toko online dengan fitur analitik real-time, manajemen inventaris, dan mode gelap. Dibangun dengan fokus pada performa.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop",
+    description: "Saewooden merupakan brand yang menyediakan perlengkapan rumah tangga seperti utensils, gelas, dan sebagainya yang terbuat dari kayu premium. Dalam proyek ini saya melakukan redesign website sehingga lebih intuitif",
+    image: "./public/Saewooden.png",
     tags: ["Figma", "Figjam", "Maze", "Notion"],
     demoUrl: "https://www.saedarpagroup.com/",
     repoUrl: "#",
@@ -58,9 +58,9 @@ const projects: Project[] = [
     category: "Wordpress Development",
     title: "Zethink Creative",
     year: "Januari 2025 - Maret 2025",
-    description: "Platform manajemen toko online dengan fitur analitik real-time, manajemen inventaris, dan mode gelap. Dibangun dengan fokus pada performa.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop",
-    tags: ["Figma", "Figjam", "Elementor", "Canva"],
+    description: "Zethink Creative merupakan proyek PKL yang dibangun untuk menyediakan jasa UI/UX Design, website ini memiliki beberapa layanan seperti UI/UX, Brand, dan sebagainya.",
+    image: "./public/Zethink_web.png",
+    tags: ["Wordpress", "Figma", "Elementor", "Canva"],
     demoUrl: "https://zethinkcreative.ciptaedukasinesia.com/",
     repoUrl: "#",
   },
@@ -69,8 +69,8 @@ const projects: Project[] = [
     category: "Website Development",
     title: "Selfie Photobox - Fun Project",
     year: "November 2025",
-    description: "Platform manajemen toko online dengan fitur analitik real-time, manajemen inventaris, dan mode gelap. Dibangun dengan fokus pada performa.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop",
+    description: "Proyek Selfie Photobox dibuat untuk mempelajari tech stack React.js dan Typescript sekaligus untuk mencari tahu bagaimana sistem photobox yang sedang viral bekerja",
+    image: "./public/Selfie.png",
     tags: ["Vite", "React", "Typescript"],
     demoUrl: "https://cekrek-k6uk.vercel.app/",
     repoUrl: "#",
@@ -80,9 +80,9 @@ const projects: Project[] = [
     category: "Website Development",
     title: "Inventaris Bengkel SMK Lemuria",
     year: "November 2025",
-    description: "Platform manajemen toko online dengan fitur analitik real-time, manajemen inventaris, dan mode gelap. Dibangun dengan fokus pada performa.",
+    description: "Inventaris Bengkel SMK Lemuria Kudus merupakan project pengabdian dosen Prodi TI, saya berkontribusi dalam merancang serta membangun website inventaris yang kemudian diimplementasikan kepada SMK Lemuria Kudus",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop",
-    tags: ["PHP", "Laravel", "MySQL"],
+    tags: ["PHP", "Laravel", "Filament", "MySQL"],
     demoUrl: "#",
     repoUrl: "#",
   },
@@ -91,7 +91,7 @@ const projects: Project[] = [
     category: "Website Development",
     title: "ZeroWasteCycle App",
     year: "November 2025",
-    description: "Platform manajemen toko online dengan fitur analitik real-time, manajemen inventaris, dan mode gelap. Dibangun dengan fokus pada performa.",
+    description: "ZeroWasteApp merupakan aplikasi yang menghubungkan antara pemilik usaha FnB dengan lembaga sosial untuk mendonasikan makanan layak",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop",
     tags: ["Vite", "React", "Typescript", "Supabase"],
     demoUrl: "#",
@@ -163,7 +163,7 @@ const Portfolio = () => {
               </div>
             </CardHeader>
 
-            <CardContent className="flex-grow">
+            <CardContent className="grow">
               <CardDescription className="text-sm leading-relaxed line-clamp-3">
                 {project.description}
               </CardDescription>
